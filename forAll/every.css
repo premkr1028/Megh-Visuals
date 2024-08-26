@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  ;
+  color: #fff;
+}
+
+:root {
+  --bl: #171717;
+  --or: #ff591c;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+#container {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  background-color: var(--bl);
+  /* overflow: hidden; */
+}
+
+.pageFirst {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  
+}
+
+.page1 {
+  background-color: var(--bl);
+  transition: 0.3s;
+
+}
+nav {
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  /* border-bottom: #dadada solid 1px; */
+  display: flex;
+  padding: 0 3vw;
+  position: fixed;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+  justify-content: center;
+  z-index: 999;
+}
+
+.navItems {
+  z-index: 998;
+  /* transform: translateY(-100%); */
+  transition: 0.5;
+  height: 0vh;
+  /* display: none; */
+}
+
+.navItemsMain {
+  height: 0vw;
+}
+
+.logo {
+  width: 32%;
+  height: 100%;
+  cursor: pointer;
+}
+
+nav>ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5vw;
+  width: 32%;
+  height: 100%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav>ul li {
+  list-style: none;
+  font-size: 1.2vw;
+  text-transform: capitalize;
+  transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.asd {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.asd>ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.asd>ul li {
+  list-style: none;
+  font-size: 1.2vw;
+  text-transform: capitalize;
+  transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+  mix-blend-mode: difference;
+}
+
+.asd .menuBtn {
+  font-size: 1.2vw;
+  text-transform: capitalize;
+  position: absolute;
+  opacity: 0;
+  scale: 0;
+  cursor: pointer;
+  mix-blend-mode: difference;
+}
+
+
+/* section{
+  margin-top:60px;
+} */
+
+
+.cursor {
+  position: absolute;
+  background-color: var(--or);
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  z-index: 9;
+  pointer-events: none;
+}
+.exBtn{
+  background-color: transparent !important;
+  border: 0.5px solid gray;
+}
+.contactBtn{
+  background-color: var(--or);
+}
+
+
+footer {
+  height: 80vh;
+  position: relative;
+  clip-path: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)";
+  background-color: black;
+  z-index: -1000;
+
+}
+
+
+
+footer {
+  height: 80vh;
+  position: relative;
+  clip-path: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)";
+  background-color: yellow;
+  z-index: -1000;
+
+}
+
+footer .fc1 {
+  height: 80vh;
+  /* display: none; */
+  position: fixed;
+  background-color: #000;
+  bottom: 0;
+  z-index: 2;
+  opacity: 1;
+}
+
+.fc1ContMarque {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  white-space: no-wrap;
+  height: 40vh;
+  align-items: center;
+  /* gap: 2vw; */
+  border-top: 0.2px solid #b5b5b5;
+  border-bottom: 0.2px solid #b5b5b5;
+  /*  */
+}
+
+.fc1ContMarque h1 {
+  /* margin-left: 2vw; */
+  font-size: 10vw;
+  display: block;
+  white-space: nowrap;
+  animation: chal 8s linear infinite;
+}
+
+@keyframes chal {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.lowerFoot {
+  bottom: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+.lowerFoot .at>p {
+  font-size: 1.3vw;
+  font-family: 'EDU';
+  /* font-weight: 300; */
+}
+
+.btt {
+  background-color: black;
+  font-size: 1.5vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  border: 0.1px gray;
+  position: relative;
+  border-radius: 8px;
+}
+
+.btt::after {
+  z-index: -1;
+  content: '';
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.5vh;
+  left: 0.5vh;
+  border-radius: 8px;
+  transition: 0.3s;
+
+}
+
+.btt img {
+  height: 100%;
+}
+
+.btt:hover::after {
+  top: 0%;
+  left: 0;
+}
+/*  */
+.sclinks{
+   position: relative;
+}
+.sclinks a{
+  font-size: 1.2vw;
+  display:inline;
+  position: relative;
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+.navItems ul li {
+  transition: 0.3s;
+
+  * {
+    transition: 0.3s;
+  }
+
+  border-top: 0.5px solid lightgray;
+  border-bottom: 0.5px solid lightgray;
+  padding: 10px 0px 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  i {
+    /* width: 0; */
+    transition: 0.3s;
+    font-size: 0vw;
+    color: var(--or);
+    /* display: none; */
+    scale: 0;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4vw;
+  }
+}
+
+.navItems ul li:hover {
+  i {
+    /* display: flex; */
+    font-size: 3vw;
+    scale: 1;
+  }
+}
+
+.navItems ul li {
+  transform: translateX(-100%);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.smMenu ul li {
+  height: 0.5px;
+  background-color: lightgray;
+
+}
+
+.smMenu {
+  display: none;
+}
+
+.logo {
+  transition: 0.3s;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+
+  /* background-color: yellow; */
+  /* margin-top: 5px; */
+  span {
+    color: var(--or);
+  }
+}
+
+.logo a p {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+}
+
+.logo p {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.7vw;
+}
+
+
+@media(max-width:640px) {
+  body{
+    overflow-x: hidden;
+  }
+  .smMenu {
+    display: flex;
+  }
+
+  nav .menu {
+    display: none;
+
+  }
+
+  nav {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: max-content;
+  }
+
+  .logo p {
+    font-size: 14px !important;
+  }
+
+  .wwuBtn {
+    font-size: 8px !important;
+
+  }
+
+  .menuBtn {
+    font-size: 8px !important;
+  }
+
+  .punchLine {
+    * {
+
+      font-size: 20px !important;
+    }
+
+    p {
+      span {
+        font-size: 25px !important;
+      }
+    }
+  }
+
+  .uper {
+    * {
+      font-size: 14px;
+    }
+  }
+  .videoEdit{
+    flex-direction: column;
+    align-items: center;
+    .veCard{
+      width: max-content;
+      .card{
+
+        width: 80vw;
+        height: max-content;
+
+      }
+    }
+    .title{
+      font-size: 17px !important;
+    }
+  }
+  .veText{
+    width: 85%;
+    h2{
+      font-size: 20px !important;
+      font-weight: bolder;
+    }
+    .well{
+      font-size: 16px !important;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  .graphicDesign{
+    display: flex;
+    flex-direction: column-reverse;
+    height: max-content !important;
+    .gdCard{
+      width: 100%;
+      .title{
+        font-size: 17px;
+      }
+      .card{
+position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: max-content;
+      }
+      .card::after{
+content: "Coming Soon...";
+        background-color: rgba(100, 100, 111, 0.5);
+        width: 100%;
+        height: max-content;
+        position: absolute;
+        top: 50%;
+        /* left: 50%; */
+ display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50% -50%);
+      }
+    }
+  }
+
+  .downShow{
+    margin-top: 10px;
+    width: 20px;
+    height: 40px;
+
+  }
+  .showreel .vdiv{
+    width: 85%;
+  }
+  .cuBtn{
+    display: none;
+  }
+  .examples{
+    min-height: 100vh;
+  }
+  #cuBtnTwo{
+    margin-top: 8px !important;
+    display: grid;
+  width: max-content;
+    margin: 0 auto;
+    padding: 0 8px 0 8px;
+    *{
+
+font-size: 10px !important;
+    }
+  }
+  .reels .r1,
+  .reels .r2 {
+    background-color: red;
+    /* background-color: yellow; */
+    width: 40.5vw !important;
+    height: max-content !important;
+
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  .cardCont{
+    padding: 0 10px;
+gap: 10px !important;
+    .card{
+    width: 40vw;
+      height: 150px;
+      h4{
+        text-align: center;
+        font-size: 10px;
+      }
+  }
+    .card:after{
+      font-size: 2.5vw;
+    }
+}
+  .wcuIcon{
+    width: 25px !important;
+  }
+  .pricing{
+*{
+  font-size: 14px !important;
+}
+    h2{
+      font-size: 18px;
+    }
+
+  }
+  .say p{
+    font-size: 15px;
+  }
+  .say .hello-img-div{
+    width: 10.5vw;
+  }
+  .say{
+    .smSayText{
+      display: flex;
+    }
+  }
+  .upFoot{
+    justify-content: center !important;
+.sclinks{
+  width: 100%;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  a{
+    transition: 0.3s;
+    font-size: 13px !important;
+    text-transform: uppercase;
+  }
+  a:hover{
+    color: lightgoldenrodyellow;
+    scale: 1.05;
+  }
+}
+  }
+.at p{
+  /* background-color: red; */
+ font-size: 8px !important;
+  width: 100% !important;
+}
+  .btt{
+    width: max-content !important;
+    font-size: 6px !important;
+    text-wrap: wrap !important;
+    padding: 5px 10px !important;
+    p{
+      text-wrap: nowrap;
+    }
+    img{
+      height: 8px;
+    }
+  }
+  .cursor{
+    display: none !important;
+  }
+  .showreel{
+    height: max-content !important;
+  }
+  .pricing{
+
+    min-height: max-content !important;
+    margin-bottom: 10px !important;
+  }
+.contactBtn{
+  font-size: 12px !important;
+}
+}
+body::-webkit-scrollbar {
+  display: none;
+}

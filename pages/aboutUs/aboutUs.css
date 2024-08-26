@@ -1,0 +1,82 @@
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.025);
+  *{color: #000 !important;
+}
+}
+.extraCont{
+  p{
+    color: #000; 
+  font-size: 2.2vw;
+  }
+}
+.opener{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  h1{
+    font-size: 15vw;
+    color: black;
+    position: absolute;
+  }
+}
+.open1{
+  h1{
+    top:50%;
+  }
+}
+.open2{
+  h1{
+    bottom:50%;
+  }
+}
+
+.smMenu ul li{
+  background-color: black !important;
+}
+
+
+@media(max-width:640px){
+  .mainWrite{
+    p{
+      font-size: 13px !important;
+    }
+  }
+  .firstPara{
+    flex-direction: column-reverse;
+    align-items: center;
+    .imgDiv{
+      width: 85vw;
+    }
+    p{
+      width: 90%;
+      text-align: start;
+      font-size: 12px;
+    }
+  }
+  .secPara{
+    p{
+      font-size: 11px;
+    }
+  }
+  .thirdPara{
+    flex-direction: column;
+    p{
+      width: 90vw;
+      font-size: 12px;
+    }
+    .us{
+      width: 80vw;
+    }
+  }
+}
+
+.menu li:nth-child(3) a{
+color: var(--or) !important;
+   opacity: 0.8;
+}

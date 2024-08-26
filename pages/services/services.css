@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bl: #171717;
+  --or: #ff591c;
+}
+.cardSection .card{
+ flex:1;
+  border:1px solid #b5b5b5;
+  padding:10px 8px;
+}
+.plansSec{
+  width: 80vw;
+}
+
+.scs ul li a i{
+  font-size: 3vw;
+  transition: 0.2s;
+}
+.scs ul li a i:hover{
+scale: 1.1;
+  opacity: 0.7;
+}
+.exBtn{
+  transition: 0.2s;
+
+}
+
+.exBtn:hover{
+  scale: 1.02;
+  background-color: var(--or) !important;
+}
+
+.contactBtn{
+  transition: 0.3s;
+}
+.contactBtn:hover{
+  color: lightgray;
+  opacity: 0.8;
+  scale: 1.01;
+
+}
+
+@media(max-width:640px){
+  .textDiv{
+    h1{
+      font-size: 15px !important;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-top: 15px;
+    }
+    p{
+      font-size: 12px !important;
+    }
+  }
+  .card{
+    p{
+      font-size: 9px;
+    }
+    .price{
+        font-size: 20px;
+      
+    }
+    .exBtn{
+      font-size: 12px;
+    }
+  }
+  .scs{
+    h1{
+      font-size: 15px;
+    }
+    i{
+      font-size: 18px !important;
+    }
+  }
+ 
+}
+.menu li:nth-child(2) {
+color: var(--or);
+   opacity: 0.8;
+}
